@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,164,242,1) 0%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* display: flex;  */
+    justify-content: space-between;
+}
+.container{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-signin{
+    background-color: rgb(248, 205, 188);
+    border-radius: 20px;
+    padding: 5% 10%;
+  position: relative;
+  /* right: 40%; */
+}
