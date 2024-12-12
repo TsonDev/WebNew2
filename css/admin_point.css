@@ -1,0 +1,138 @@
+/* Tổng quan */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,164,242,1) 0%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Form thông tin môn học */
+.form-student {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.form-student h3 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-student label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-student input[type="text"],
+.form-student input[type="number"],
+.form-student input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-student button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-student button:hover {
+    background-color: #218838;
+}
+
+.form-student button:last-child {
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+.form-student button:last-child:hover {
+    background-color: #0056b3;
+}
+
+/* Danh sách môn học và sinh viên */
+.list-student {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    max-height: 500px;
+}
+
+#list-students,
+#student-detail {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#list-students th,
+#student-detail th,
+#list-students td,
+#student-detail td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+#list-students th,
+#student-detail th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+#list-students tr:nth-child(even),
+#student-detail tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#list-students tr:hover,
+#student-detail tr:hover {
+    background-color: #e8f0fe;
+}
+
+#list-students td,
+#student-detail td {
+    color: #333;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .form-student,
+    .list-student {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+th,td{
+    width: 150px;
+}

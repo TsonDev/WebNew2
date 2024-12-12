@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(159,164,242,1) 0%, rgba(0,212,255,1) 100%);
+    /* display: flex;  */
+    justify-content: space-between;
+}
+.container{
+    width: 100%; 
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+    /* border: 1px solid orange; */
+     /* background-color: rgb(248, 205, 188); */
+     
+}
+.form-signup{
+    width: 100%;
+    border-radius: 5px;
+    padding: 5% 10%;
+    color: white;
+}
+.mp-3{
+    padding: 0;
+}
